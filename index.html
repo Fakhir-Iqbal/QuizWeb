@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sylani Quiz</title>
+  <link rel="icon"
+    href="https://image.winudf.com/v2/image/Y29tLmFwcC5zYXlsYW5pX2ljb25fMF84YzYwYzE2OQ/icon.png?w=184&fakeurl=1">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="head">
+      <div class="user-welcome">
+        <!-- <span class="loader"></span> -->
+        <h1 class="text">Hi <span id="user-name">there</span>,</h1>
+        <h1 class="text">Welcome To Quiz :</h1>
+        <h3 class="std-message">
+          Welcome to our quiz application! We are very <br>
+          excited to have you here. This quiz is designed <br>
+          to test your knowledge and help you learn new <br>
+          things along the way.
+        </h3>
+        <button onclick="start()" id="start" >Start</button>
+      </div>
+    </div>
+    <div class="container">
+      <header>
+        <div class="ques-info">
+          <h1 id="head">JavaScript Quiz</h1>
+        </div>
+        <div class="ques-info2">
+          <h2 id="question-count"></h2>
+          <div class="time">
+            <h2 id="timer"></h2>
+          </div>
+        </div>
+      </header>
+
+      <div id="quiz">
+        <div>
+          <div class="question-area">
+            <h2 id="quiz-question">Question</h2>
+          </div>
+          <br>
+          <div class="quiz-answer">
+            <ul>
+              <li>
+                <label for="a">
+                  <input type="radio" required id="a" name="entry.1808372660" class="answer" value="a" />
+                  <span id="answer_a">No</span>
+                </label>
+              </li>
+              <li>
+                <label for="b">
+                  <input type="radio" required id="b" name="entry.1808372660" class="answer" value="b" />
+                  <span id="answer_b">No</span>
+                </label>
+              </li>
+              <li>
+                <label for="c">
+                  <input type="radio" required id="c" name="entry.1808372660" class="answer" value="c" />
+                  <span id="answer_c">No</span>
+                </label>
+              </li>
+
+              <li>
+                <label for="d">
+                  <input type="radio" required id="d" name="entry.1808372660" class="answer" value="d" />
+                  <span id="answer_d">No</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button id="submit">Next</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="function.js"></script>
+
+</body>
+
+</html>

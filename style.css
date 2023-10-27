@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Kaushan+Script&family=Poppins:wght@300&family=Qwitcher+Grypen:wght@700&family=Raleway&family=Urbanist&display=swap');
+
+/* font-family: 'Bricolage Grotesque', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Qwitcher Grypen', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Urbanist', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-vector/blue-web-support-help-page-template-design_1017-26768.jpg?w=740&t=st=1698302193~exp=1698302793~hmac=32cdc0b018662fa8b61a645b8f8e9178b038bf2867378548d94cbcf96422a9fd);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.container {
+  display: none;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-welcome {
+  color: #E5E6E0;
+  text-shadow: 0px 0px 10px #000;
+  padding: 0px 10%;
+  height: 96vh;
+  width: 100%;
+  /* background-image: url("jeswin-thomas--hgJu2ykh4E-unsplash.jpg");
+  background-size: cover;
+  background-position: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  font-size: 46px;
+}
+
+.std-message {
+  padding-top: 2%;
+  font-size: medium;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  text-align: justify;
+  font-style: oblique;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+}
+
+
+
+.loader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgb(0, 0, 0) inset;
+ 
+}
+
+.loader:after {
+  box-shadow: 0 2px 0 #000000 inset;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0)
+  }
+
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+/* Quiz style  */
+
+.container {
+  width: 70%;
+  height: 99.9vh;
+  margin-left: 15%;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#quiz {
+  margin: 0 5em;
+}
+
+#quiz-question {
+  color: white;
+  padding-top: 7%;
+  font-style: italic;
+}
+
+#quiz-question,
+.reload {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  padding-left: 5%;
+  padding-top: 10%;
+}
+
+li {
+  list-style: none;
+  line-height: 2rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+li label {
+  cursor: pointer;
+}
+
+#submit,
+#reload {
+  font-weight: 800;
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  background-image: linear-gradient(to right, #e7e7e7, #ffffff);
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 0.3em 3em;
+  outline: none;
+  border: none;
+}
+
+#submit,
+#reload {
+  box-shadow: 0 0 15px #ffffff, 0 0 15px #ffffff;
+  border: 2px solid #3c93ff;
+  margin-top: 7%;
+  color: #3c93ff;
+}
+
+.ques-info {
+  padding: 2em 3em;
+  font-size: 22px;
+  text-align: center;
+  text-shadow: 0 0 15px #ffffff, 0 0 15px #ffffff;
+  color: white;
+}
+
+.ques-info2 {
+  /* text-shadow: 0 0 15px #ffffff, 0 0 15px #ffffff; */
+  color: white;
+  padding-right: 4%;
+}
+
+#timer {
+  text-align: end;
+}
+
+/* .ques-info>h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+} */
+.quiz-answer {
+  padding-left: 5%;
+  color: #ffffff;
+  padding-top: 4%;
+}
+#start{
+  font-weight: 800;
+  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ffffff, 0 0 15px #ffffff;
+  border: 2px solid #3c93ff;
+  margin-top: 7%;
+  color: #3c93ff;
+  width: 200px;
+  height: 40px;
+}
+@media (max-width: 600px) {
+  #quiz-question{
+    font-size: medium;
+  }
+  .text {
+    line-height: 3rem;
+    font-size: 40px;
+  }
+
+  .std-message {
+    display: none;
+  }
+
+  #quiz {
+    margin: 0 1em;
+  }
+
+  li {
+    border-bottom: 1px solid rgb(202, 202, 202);
+  }
+
+  .ques-info {
+    font-size: larger;
+  }
+
+  #question-count {
+    text-align: end;
+  }
+
+  #timer {
+    text-align: end;
+    padding-top: 5%;
+    font-size: medium;
+  }
+}
