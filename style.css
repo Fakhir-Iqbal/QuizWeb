@@ -13,9 +13,12 @@ font-family: 'Urbanist', sans-serif; */
 }
 
 body {
-  background-image: url(https://img.freepik.com/free-vector/blue-web-support-help-page-template-design_1017-26768.jpg?w=740&t=st=1698302193~exp=1698302793~hmac=32cdc0b018662fa8b61a645b8f8e9178b038bf2867378548d94cbcf96422a9fd);
+  background-image: url('https://images.unsplash.com/photo-1540835296355-c04f7a063cbb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
+  backdrop-filter: blur(10px); 
+  height: 100vh;
 }
 
 
@@ -62,6 +65,34 @@ body {
 }
 
 
+/* Add new styling for the result container */
+.result-container {
+  text-align: center;
+}
+
+.result-title {
+  font-size: medium;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  text-align: justify;
+  font-style: oblique;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  color: #ffffff;
+}
+
+.result-text {
+  font-size: medium;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  text-align: justify;
+  font-style: oblique;
+  text-shadow: 0px 0px 10px rgb(255, 255, 255);
+  font-size: 18px;
+  margin: 10px 0;
+  color: white;
+}
 
 .loader {
   position: relative;

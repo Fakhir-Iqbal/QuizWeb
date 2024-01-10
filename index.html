@@ -5,32 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sylani Quiz</title>
-  <link rel="icon"
-    href="https://image.winudf.com/v2/image/Y29tLmFwcC5zYXlsYW5pX2ljb25fMF84YzYwYzE2OQ/icon.png?w=184&fakeurl=1">
-  <link rel="stylesheet" href="style.css">
-
-
+ <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="main-container">
     <div class="head">
       <div class="user-welcome">
-        <!-- <span class="loader"></span> -->
         <h1 class="text">Hi <span id="user-name">there</span>,</h1>
-        <h1 class="text">Welcome To Home :</h1>
+        <h1 class="text">Welcome To Quiz :</h1>
         <h3 class="std-message">
           Welcome to our quiz application! We are very <br>
           excited to have you here. This quiz is designed <br>
           to test your knowledge and help you learn new <br>
           things along the way.
         </h3>
-        <button onclick="start()" id="start" >Start</button>
+        <button onclick="start()" id="start">Start</button>
       </div>
     </div>
-    <div class="container">
+    <div class="container" style="display: none;">
       <header>
-        <div class="ques-info">
+        <div class="ques-info" id="quiz-info">
           <h1 id="head">JavaScript Quiz</h1>
         </div>
         <div class="ques-info2">
@@ -67,7 +62,6 @@
                   <span id="answer_c">No</span>
                 </label>
               </li>
-
               <li>
                 <label for="d">
                   <input type="radio" required id="d" name="entry.1808372660" class="answer" value="d" />
@@ -82,10 +76,7 @@
     </div>
   </div>
 
-
-
   <script src="function.js"></script>
-
 </body>
 
 </html>
